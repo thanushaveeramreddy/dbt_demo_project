@@ -1,0 +1,33 @@
+dbt_demo_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: anblicksorg.anblicksorg_aws
+      user: TVEERAMREDDY
+      role: GDP_SERVICE_ROLE
+      warehouse: DBT_WH
+      database: DEV_GDP_BRONZE_DB
+      schema: dev_bronze
+      authenticator: externalbrowser
+      threads: 4
+    uat:
+      type: snowflake
+      account: anblicksorg.anblicksorg_aws
+      user: TVEERAMREDDY
+      role: GDP_SERVICE_ROLE
+      warehouse: DBT_WH
+      database: DEV_GDP_BRONZE_DB
+      schema: uat_bronze
+      authenticator: externalbrowser
+      threads: 4
+    prod:
+      type: snowflake
+      account: anblicksorg.anblicksorg_aws
+      user: TVEERAMREDDY
+      role: GDP_SERVICE_ROLE
+      warehouse: DBT_WH
+      database: DEV_GDP_BRONZE_DB
+      schema: prod_bronze
+      authenticator: externalbrowser
+      threads: 4
