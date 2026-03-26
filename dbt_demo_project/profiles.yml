@@ -17,7 +17,7 @@ dbt_demo_project:
       user: TVEERAMREDDY
       role: GDP_SERVICE_ROLE
       warehouse: DBT_WH
-      database: DEV_GDP_BRONZE_DB
+      database: UAT_GDP_BRONZE_DB
       schema: uat_bronze
       authenticator: externalbrowser
       threads: 4
@@ -27,7 +27,7 @@ dbt_demo_project:
       user: TVEERAMREDDY
       role: GDP_SERVICE_ROLE
       warehouse: DBT_WH
-      database: DEV_GDP_BRONZE_DB
+      database: PROD_GDP_BRONZE_DB
       schema: prod_bronze
       authenticator: externalbrowser
       threads: 4

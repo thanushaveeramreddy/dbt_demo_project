@@ -7,4 +7,4 @@
   )
 
   select *
-  from source_data
+  from non_existing_table
